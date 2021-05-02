@@ -40,12 +40,13 @@ label {
 }
 
 select {
-    border-radius: 5px;
+    border-radius: 20px;
     height: 2rem;
     width: 5rem;
     text-align: center;
     text-align-last: center;
     text-indent: 15px;
+    outline: none;
 }
 
 input {
@@ -71,4 +72,13 @@ button {
     background-color: rgba(46, 48, 49, 0.5);
     outline: none;
     box-shadow: none;
+}
+
+#LEselectDiv {
+    margin-top: 30px;
+}
+
+#LEselect {
+    height: 2rem;
+    width: 12.5rem;
 }

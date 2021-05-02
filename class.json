@@ -1,0 +1,78 @@
+{
+    "ClassHour": [{
+            "AulaNum": 0,
+            "StartTime": 7.25,
+            "EndTime": 8.15
+        },
+        {
+            "AulaNum": 1,
+            "StartTime": 8.15,
+            "EndTime": 9.05
+        },
+        {
+            "AulaNum": 2,
+            "StartTime": 9.20,
+            "EndTime": 10.10
+        },
+        {
+            "AulaNum": 3,
+            "StartTime": 10.10,
+            "EndTime": 11.00
+        },
+        {
+            "AulaNum": 4,
+            "StartTime": 11.00,
+            "EndTime": 11.50
+        }
+
+    ],
+    "a": {
+        "HistLink": "https://meet.google.com/lookup/d2tiva74v6?authuser=0&hs=179",
+        "MatLink": "https://meet.google.com/lookup/eet5chxvkt",
+        "BioLink": "https://meet.google.com/lookup/aidnilv2my",
+        "QuiLink": "https://meet.google.com/lookup/gp4spgnxaw",
+        "PortLink": "https://meet.google.com/lookup/gzh5izuxxb",
+        "FisLink": "https://meet.google.com/lookup/dedfvgu3od",
+        "FiloLink": "https://meet.google.com/lookup/cl22tuuycb",
+        "GeoLink": "https://meet.google.com/lookup/d4eg42rpbj",
+        "EreLink": "https://meet.google.com/lookup/giigxovike",
+        "LingEstranLink": {
+            "esp": "https://meet.google.com/lookup/bwx5sae6xj?authuser=1&hs=179",
+            "ing1": "https://meet.google.com/lookup/frkabxaj7d",
+            "ing2": "https://meet.google.com/lookup/dlzqcp6kvm",
+            "ing3": "https://meet.google.com/lookup/gf6p7caouy"
+        },
+        "cronograma": [
+            ["HistLink", "MatLink", "QuiLink", "PortLink", "FisLink"],
+            ["FiloLink", "MatLink", "GeoLink", "BioLink", "PortLink"],
+            ["BioLink", "LingEstranLink", "QuiLink", "FisLink", "MatLink"],
+            ["QuiLink", "FisLink", "GeoLink", "MatLink", "HistLink"],
+            ["PortLink", "PortLink", "LingEstranLink", "BioLink", "EreLink"]
+        ]
+    },
+    "c": {
+        "HistLink": "https://meet.google.com/lookup/ehq4kodfvu",
+        "MatLink": "https://meet.google.com/lookup/eahmkvmeqf",
+        "BioLink": "https://meet.google.com/lookup/gm7xqmmadw",
+        "QuiLink": "https://meet.google.com/lookup/bi4fp2oza5",
+        "PortLink": "https://meet.google.com/lookup/cmmygnoule",
+        "FisLink": "https://meet.google.com/lookup/hlfcpid7tt",
+        "FiloLink": "https://meet.google.com/lookup/dntrt5w3m",
+        "GeoLink": "https://meet.google.com/lookup/hn6enz3iaq",
+        "EreLink": "https://meet.google.com/lookup/e7pnlbgqzg",
+        "LingEstranLink": {
+            "esp": "https://meet.google.com/lookup/bwx5sae6xj?authuser=1&hs=179",
+            "ing1": "https://meet.google.com/lookup/frkabxaj7d",
+            "ing2": "https://meet.google.com/lookup/hnrnk",
+            "ing3": "https://meet.google.com/lookup/dlzqcp6kvm"
+        },
+        "cronograma": [
+            ["PortLink", "PortLink", "EreLink", "QuiLink", "BioLink"],
+            ["QuiLink", "FiloLink", "PortLink", "MatLink", "GeoLink"],
+            ["HistLink", "LingEstranLink", "MatLink", "BioLink", "FisLink"],
+            ["MatLink", "QuiLink", "FisLink", "HistLink", "PortLink"],
+            ["BioLink", "GeoLink", "LingEstranLink", "FisLink", "MatLink"]
+        ]
+    }
+
+}
