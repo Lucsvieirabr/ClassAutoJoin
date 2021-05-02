@@ -50,6 +50,30 @@
             ["PortLink", "PortLink", "LingEstranLink", "BioLink", "EreLink"]
         ]
     },
+    "b": {
+        "HistLink": "https://meet.google.com/lookup/esho2gt7rh",
+        "MatLink": "https://meet.google.com/lookup/gsic2erlix",
+        "BioLink": "https://meet.google.com/lookup/cvq5rha4ha",
+        "QuiLink": "https://meet.google.com/lookup/c5qka5g2sg",
+        "PortLink": "https://meet.google.com/lookup/ayq57uhntj",
+        "FisLink": "https://meet.google.com/lookup/d2u3zpu6df",
+        "FiloLink": "https://meet.google.com/lookup/b4yac6wtpz",
+        "GeoLink": "https://meet.google.com/lookup/b3js5vt2he",
+        "EreLink": "https://meet.google.com/lookup/aaxp5ttf5j",
+        "LingEstranLink": {
+            "esp": "https://meet.google.com/lookup/bwx5sae6xj?authuser=1&hs=179",
+            "ing1": "https://meet.google.com/lookup/frkabxaj7d",
+            "ing2": "https://meet.google.com/lookup/dlzqcp6kvm",
+            "ing3": "https://meet.google.com/lookup/gf6p7caouy"
+        },
+        "cronograma": [
+            ["FisLink", "QuiLink", "PortLink", "HistLink", "MatLink"],
+            ["BioLink", "FisLink", "MatLink", "EreLink", "QuiLink"],
+            ["GeoLink", "LingEstranLink", "HistLink", "PortLink", "PortLink"],
+            ["PortLink", "MatLink", "QuiLink", "BioLink", "FisLink"],
+            ["MatLink", "FiloLink", "LingEstranLink", "GeoLink", "BioLink"]
+        ]
+    },
     "c": {
         "HistLink": "https://meet.google.com/lookup/ehq4kodfvu",
         "MatLink": "https://meet.google.com/lookup/eahmkvmeqf",

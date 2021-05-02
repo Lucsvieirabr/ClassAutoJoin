@@ -106,3 +106,20 @@ button {
         width: 400px;
     }
 }
+
+#credit {
+    margin-top: 2.5rem;
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(197, 132, 132);
+    margin-left: 0.2rem;
+}
+
+a:hover {
+    color: rgb(245, 120, 120);
+}
