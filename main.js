@@ -28,8 +28,6 @@ async function openwindow(window) {
 
     let link = await GetLink()
     if (!link.startsWith('h')) return alert(link)
-    let ClassPage = window.open(await GetLink());
-
-
+    window.open(await GetLink());
 
 }
