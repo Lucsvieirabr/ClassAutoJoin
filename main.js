@@ -1,3 +1,20 @@
+document.getElementById('classselect').value = localStorage.class || 'a'
+document.getElementById('LEselect').value = localStorage.estranclass || 'esp'
+
+
+let StorageData = function() {
+
+    let SelClass = document.getElementById('classselect').value
+    let SelEstranClass = document.getElementById('LEselect').value
+    localStorage.setItem('class', SelClass)
+    localStorage.setItem('estranclass', SelEstranClass)
+
+
+
+}
+
+document.onchange = StorageData
+
 async function GetLink() {
     let Data = new Date();
     let Time = Data.getHours() + (Data.getMinutes() / 100)
