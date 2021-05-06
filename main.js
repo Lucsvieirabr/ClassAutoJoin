@@ -1,7 +1,6 @@
 document.getElementById('classselect').value = localStorage.class || 'a'
 document.getElementById('LEselect').value = localStorage.estranclass || 'esp'
 
-
 let StorageData = function() {
 
     let SelClass = document.getElementById('classselect').value
