@@ -30,7 +30,7 @@
         <h1>Entrar na Aula</h1>
         <div>
             <label>Salas Disponíveis</label>
-            <select id="classselect">
+            <select id="classselect" onchange="StorageData('classselect', 'class')">
             
             <option value="a">2°A</option>
             <option value="b">2°B</option>
@@ -41,7 +41,7 @@
         </div>
         <div id="LEselectDiv">
             <label>Língua estrangeira</label>
-            <select id="LEselect">
+            <select id="LEselect" onchange="StorageData('LEselect', 'estranclass')">
             
             <option value="esp">Espanhol</option>
             <option value="ing1">Inglês Regular</option>
@@ -51,6 +51,7 @@
 
         </select>
         </div>
+
         <button onclick="openwindow(window)">Join Class</button>
         <p id="credit">Feito por <a href="https://github.com/Lucsvieirabr">Lucas Vieira da Silva</a></p>
     </section>
