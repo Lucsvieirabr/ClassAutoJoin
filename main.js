@@ -2,9 +2,9 @@ document.getElementById('classselect').value = localStorage.class || 'a'
 document.getElementById('LEselect').value = localStorage.estranclass || 'esp'
 
 
-function StorageData(DocID, key) {
-    let Document = document.getElementById(DocID).value
-    localStorage.setItem(key, Document)
+function StorageData(Content, key) {
+    Content = document.getElementById(Content).value || Content
+    localStorage.setItem(key, Content)
 }
 
 async function GetLink() {
