@@ -1,28 +1,27 @@
 document.getElementById('classselect').value = localStorage.class || 'a'
 document.getElementById('LEselect').value = localStorage.estranclass || 'esp'
 
-function StorageData(Content, KeytoSave, CheckBox, CheckId) {
+async function StorageData(Content, KeytoSave, CheckBox, CheckId) {
 
+    // Se eu quiser salvar uma data de um CheckBox (os itinerários..) ele entra...
     if (CheckBox) {
+
+        // Salvando o element do checkbox
         let InputCheckBox = document.getElementById(CheckId)
+
+        //Se ele estiver, ('on') = true, ('off) = false
         if (InputCheckBox.checked) {
-            if (localStorage.KeytoSave) {
-                let Array = localStorage.KeytoSave
-                JSON.parse(Array)
-                Array.push(Content)
-                localStorage.setItem(KeytoSave, JSON.stringify(Array))
 
+            // Se já tiver uma data, ele tem que adicionar essa nova na Array, o false é se é uma nova data.
+            if (localStorage[KeytoSave]) return SaveArrayDatas(KeytoSave, Content, false)
 
-            } else {
-                let Array = [Content]
-                console.log(Array)
-                localStorage.setItem(KeytoSave, JSON.stringify(Array))
+            //Ele não tem, então temos que criar toda a base de datas, em newdata = true.
+            return SaveArrayDatas(KeytoSave, Content, true)
 
-
-            }
         }
 
-        return
+        // Ele estavá off, ou seja, o usuário quer tirar o itinerário, então chamamos o Remove.
+        return RemoveArrayDatas(KeytoSave, Content)
     }
     Content = document.getElementById(Content).value || Content
     localStorage.setItem(KeytoSave, Content)
@@ -60,4 +59,25 @@ async function openwindow(window) {
     if (!link.startsWith('h')) return alert(link)
     window.open(await GetLink());
 
+}
+
+function SaveArrayDatas(KeytoSave, Content, NewData) {
+
+    if (NewData) {
+        let Array = [Content]
+        console.log(Array)
+        localStorage.setItem(KeytoSave, JSON.stringify(Array))
+        return
+    }
+
+    let Array = JSON.parse(localStorage[KeytoSave])
+    Array.push(Content)
+    localStorage.setItem(KeytoSave, JSON.stringify(Array))
+
+}
+
+function RemoveArrayDatas(KeytoSave, Content) {
+    let Array = JSON.parse(localStorage[KeytoSave])
+    Array.splice(Array.indexOf(Content))
+    localStorage.setItem(KeytoSave, JSON.stringify(Array))
 }
