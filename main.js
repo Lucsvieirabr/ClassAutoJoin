@@ -1,6 +1,7 @@
 document.getElementById('classselect').value = localStorage.class || 'a'
 document.getElementById('LEselect').value = localStorage.estranclass || 'esp'
 
+
 if (localStorage.itinerarios) {
     CheckSelectedBox()
 }
@@ -32,14 +33,11 @@ async function StorageData(Content, KeytoSave, CheckBox, CheckId) {
 
 async function GetLink() {
     let Data = new Date();
-    let CurrentDay = Data.getDay
     let Time = Data.getHours() + (Data.getMinutes() / 100)
     if (Data.getDay === 0 || Data.getDay === 6) return ('É final de semana, vai dormir vagabundo !!');
-    if (Time < 7.25 || Time > 11.50) return GetItinerarioOrAlert(time, CurrentDay)
     if (Time >= 9.05 && Time < 9.20) return ('Tá no recreio Vagabundo, vai fazer oque com o link ?!!');
     let SelectedClass = await document.getElementById('classselect').value;
     let SelectedEstranClass = await document.getElementById('LEselect').value;
-
     let AllClassJson = await fetch('./class.json')
         .then(response => response.json())
     let AulasDoDia = AllClassJson[SelectedClass].cronograma[Data.getDay() - 1]
@@ -58,10 +56,18 @@ async function GetLink() {
 
 
 async function openwindow(window) {
+    let link
+    let Data = new Date();
+    let Time = Data.getHours() + (Data.getMinutes() / 100)
 
-    let link = await GetLink()
+    if (Time < 7.25 || Time > 11.50) {
+        link = await GetItinerarioOrAlert(Time, Data.getDay())
+    } else {
+        link = await GetLink()
+
+    }
     if (!link.startsWith('h')) return alert(link)
-    window.open(await GetLink());
+    window.open(link);
 
 }
 
@@ -93,14 +99,16 @@ function CheckSelectedBox() {
     })
 }
 
-function GetItinerarioOrAlert(time, day) {
-    if (!localStorage.itinerarios) return alert('Ainda é muito cedo ou já acabou sua aula!')
+async function GetItinerarioOrAlert(time, day) {
+    if (!localStorage.itinerarios || localStorage.itinerarios == '[]') return ('Ainda é muito cedo ou já acabou sua aula!')
     let AllClassJson = await fetch('./class.json')
         .then(response => response.json())
-    let ItinerariosJson = AllClassJson[itinerarios]
+    let ItinerariosJson = AllClassJson['itinerarios']
     let Array = JSON.parse(localStorage.itinerarios)
     Array.forEach(function(ItineInscrito) {
 
+        if (ItineInscrito == 'LabMusic' && day == 3 && time >= 13.30 && time < 17.35) return "https://meet.google.com/lookup/duki5vi7mn?authuser=0&hs=179"
+        if ((ItinerariosJson[ItineInscrito])['start'] <= time && time < (ItinerariosJson[ItineInscrito])['end']) return (ItinerariosJson[ItineInscrito])['link']
     })
 
 }
