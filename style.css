@@ -1,128 +1,136 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
-html,
-body {
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
-}
-
-h1 {
-    font-size: 3rem;
-    margin-bottom: 5rem;
-}
-
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 100vh;
-    background-color: rgba(10, 23, 55, 0.5);
-    color: white;
-    height: 100vh;
-    font-family: 'Lobster', cursive;
-}
-
-html {
-    background-image: url("https://source.unsplash.com/random");
-    background-size: cover;
-    background-position: center
-}
-
-label {
-    font-size: 1.3rem;
-}
-
-.menu {
-    display: block;
-    font-size: 1.5rem;
-    backdrop-filter: blur(5px) brightness(50%);
-    padding: 2rem;
-    border-radius: 2rem;
-}
-
-select {
-    margin-left: 0.5rem;
-    border-radius: 2rem;
-    height: 1.5rem;
-    width: 4.5rem;
-    text-align: center;
-    text-align-last: center;
-    text-indent: 1rem;
-    outline: none;
-}
-
-button {
-    margin-top: 2.5rem;
-    text-align: center;
-    height: 2.5rem;
-    width: 9rem;
-    font-size: 1rem;
-    border-radius: 2rem;
-    color: white;
-    font-family: 'Roboto Mono', monospace;
-    background-color: rgba(46, 48, 49, 0.5);
-    outline: none;
-    box-shadow: none;
-}
-
-#LEselectDiv {
-    margin-top: 2.5rem;
-    width: 400px;
-}
-
-#LEselect {
-    height: 2rem;
-    width: 12.5rem;
-}
-
-@media screen and (max-width: 418px) {
-    .menu {
-        padding: 5%;
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
     }
+    
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 5rem;
+    }
+    
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100vh;
+        background-color: rgba(10, 23, 55, 0.5);
+        color: white;
+        height: 100vh;
+        font-family: 'Lobster', cursive;
+    }
+    
+    html {
+        background-image: url("https://source.unsplash.com/random");
+        background-size: cover;
+        background-position: center
+    }
+    
     label {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
+    
+    .menu {
+        display: block;
+        font-size: 1.5rem;
+        backdrop-filter: blur(5px) brightness(50%);
+        padding: 2rem;
+        border-radius: 2rem;
+    }
+    
+    select {
+        margin-left: 0.5rem;
+        border-radius: 2rem;
+        height: 1.5rem;
+        width: 4.5rem;
+        text-align: center;
+        text-align-last: center;
+        text-indent: 1rem;
+        outline: none;
+    }
+    
+    button {
+        margin-top: 2.5rem;
+        text-align: center;
+        height: 2.5rem;
+        width: 9rem;
+        font-size: 1rem;
+        border-radius: 2rem;
+        color: white;
+        font-family: 'Roboto Mono', monospace;
+        background-color: rgba(46, 48, 49, 0.5);
+        outline: none;
+        box-shadow: none;
+    }
+    
+    #LEselectDiv {
+        margin-top: 2.5rem;
+        width: 400px;
+    }
+    
     #LEselect {
         height: 2rem;
-        width: 10rem;
+        width: 12.5rem;
     }
-    #LEselectDiv {
-        width: 400px;
+    
+    @media screen and (max-width: 418px) {
+        .menu {
+            padding: 5%;
+        }
+        label {
+            font-size: 1rem;
+        }
+        #LEselect {
+            height: 2rem;
+            width: 10rem;
+        }
+        #LEselectDiv {
+            width: 400px;
+        }
     }
-}
-
-@media screen and (max-width: 344px) {
-    .menu {
-        padding: 0.5%;
+    
+    @media screen and (max-width: 344px) {
+        .menu {
+            padding: 0.5%;
+        }
+        label {
+            font-size: 0.5rem;
+        }
+        #LEselect {
+            height: 1rem;
+            width: 8rem;
+        }
+        #LEselectDiv {
+            width: 400px;
+        }
     }
-    label {
-        font-size: 0.5rem;
+    
+    #credit {
+        margin-top: 2.5rem;
+        font-size: 1.2rem;
+        font-family: 'Times New Roman', Times, serif;
     }
-    #LEselect {
-        height: 1rem;
-        width: 8rem;
+    
+    a {
+        text-decoration: none;
+        font-family: 'Times New Roman', Times, serif;
+        color: rgb(197, 132, 132);
+        margin-left: 0.2rem;
     }
-    #LEselectDiv {
-        width: 400px;
+    
+    a:hover {
+        color: rgb(245, 120, 120);
     }
-}
-
-#credit {
-    margin-top: 2.5rem;
-    font-size: 1.2rem;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-a {
-    text-decoration: none;
-    font-family: 'Times New Roman', Times, serif;
-    color: rgb(197, 132, 132);
-    margin-left: 0.2rem;
-}
-
-a:hover {
-    color: rgb(245, 120, 120);
-}
+    
+    .container {
+        border: 2px solid #ccc;
+        width: 300px;
+        height: 100px;
+        overflow-y: scroll;
+        font-size: 1rem;
+    }

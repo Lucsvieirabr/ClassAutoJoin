@@ -1,10 +1,31 @@
 document.getElementById('classselect').value = localStorage.class || 'a'
 document.getElementById('LEselect').value = localStorage.estranclass || 'esp'
 
+function StorageData(Content, KeytoSave, CheckBox, CheckId) {
 
-function StorageData(Content, key) {
+    if (CheckBox) {
+        let InputCheckBox = document.getElementById(CheckId)
+        if (InputCheckBox.checked) {
+            if (localStorage.KeytoSave) {
+                let Array = localStorage.KeytoSave
+                JSON.parse(Array)
+                Array.push(Content)
+                localStorage.setItem(KeytoSave, JSON.stringify(Array))
+
+
+            } else {
+                let Array = [Content]
+                console.log(Array)
+                localStorage.setItem(KeytoSave, JSON.stringify(Array))
+
+
+            }
+        }
+
+        return
+    }
     Content = document.getElementById(Content).value || Content
-    localStorage.setItem(key, Content)
+    localStorage.setItem(KeytoSave, Content)
 }
 
 async function GetLink() {
