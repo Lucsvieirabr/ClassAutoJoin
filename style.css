@@ -131,6 +131,7 @@
         height: 100px;
         overflow-y: scroll;
         font-size: 1rem;
+        text-align: left;
     }
     
     .border {
@@ -161,8 +162,14 @@
     
     .option {
         margin: 0;
+        margin-top: 5px;
         padding-bottom: 20px;
         align-items: center;
         display: grid;
         grid-template-columns: auto 1fr;
+    }
+    
+    input[type="checkbox" i] {
+        margin-right: 10px;
+        margin-left: 10px;
     }
