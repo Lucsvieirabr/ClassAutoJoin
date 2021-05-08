@@ -135,7 +135,7 @@
     }
     
     .border {
-        margin-top: 2.5rem;
+        margin-top: 0.5rem;
         border: 2px solid rgb(80, 80, 80);
         border-radius: 10px;
         height: 100px;
@@ -172,4 +172,8 @@
     input[type="checkbox" i] {
         margin-right: 10px;
         margin-left: 10px;
+    }
+    
+    #itinerarioLabel {
+        margin-top: 2.5rem;
     }
