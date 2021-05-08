@@ -97,6 +97,195 @@
             ["MatLink", "QuiLink", "FisLink", "HistLink", "PortLink"],
             ["BioLink", "GeoLink", "LingEstranLink", "FisLink", "MatLink"]
         ]
+    },
+    "itinerarios": {
+
+        "PC": {
+            "link": "https://meet.google.com/lookup/czvnbmmdqc?authuser=0&hs=179",
+            "start": 15.35,
+            "end": 17.20,
+            "day": 5
+
+        },
+        "LEAS": {
+            "link": "https://meet.google.com/lookup/c2pi7yudur?authuser=0&hs=179",
+            "start": 13.30,
+            "end": 17.35,
+            "day": 4
+
+
+
+        },
+        "LabArtPr": {
+            "link": "https://meet.google.com/lookup/bo4svjgfzh?authuser=0&hs=179",
+            "start": 13.30,
+            "end": 15.15,
+            "day": 1
+
+        },
+        "LabArtCr": {
+            "link": "https://meet.google.com/lookup/aruse3qmoe?authuser=0&hs=179",
+            "start": 15.35,
+            "end": 17.20,
+            "day": 1
+
+        },
+        "LabMusic": {
+            "link": "https://meet.google.com/lookup/dzpy27z6ip?authuser=0&h",
+            "start": 13.30,
+            "end": 17.35,
+            "day": 1,
+            "TEMDOISDIAS": "SEGUNDA E QUARTA"
+
+        },
+        "ConfSoc": {
+            "link": "https://meet.google.com/lookup/awofq3ckos?authuser=0&hs=179",
+            "start": 13.30,
+            "end": 16.00,
+            "day": 1
+
+        },
+        "LabIng": {
+            "link": "https://meet.google.com/lookup/gnie2bjjcn?authuser=0&hs=179",
+            "start": 15.00,
+            "end": 16.10,
+            "day": 1
+
+        },
+        "MatAv": {
+            "link": "https://meet.google.com/lookup/fhh6tayxaj?authuser=0&hs=179",
+            "start": 15.30,
+            "end": 15.00,
+            "day": 2
+
+        },
+        "FCCSI": {
+            "link": "https://meet.google.com/lookup/delb4vpggw?authuser=0&hs=179",
+            "start": 15.20,
+            "end": 17.35,
+            "day": 2
+
+        },
+        "CenPesqSoc": {
+            "link": "https://meet.google.com/lookup/ane24exryy?authuser=0&hs=179",
+            "start": 15.35,
+            "end": 17.20,
+            "day": 2
+
+        },
+        "ComNewTec": {
+            "link": "https://meet.google.com/lookup/hfg3txnnpx?authuser=0&hs=179",
+            "start": 13.30,
+            "end": 17.30,
+            "day": 2
+
+        },
+        "ParqDB": {
+            "link": "https://meet.google.com/lookup/gzt5e5scus?authuser=0&hs=179",
+            "start": 13.30,
+            "end": 17.35,
+            "day": 4
+
+        },
+        "TutCie": {
+            "link": "https://meet.google.com/lookup/hduwayewgz?authuser=0&hs=179",
+            "start": 15.30,
+            "end": 17.00,
+            "day": 2
+
+        },
+        "AnExCie": {
+            "link": "https://meet.google.com/lookup/camq7uaiy5?authuser=0&hs=179",
+            "start": 15.35,
+            "end": 17.20,
+            "day": 3
+
+        },
+        "Trips": {
+            "link": "https://meet.google.com/lookup/dsqjbtcadl?authuser=0&hs=179",
+            "start": 15.35,
+            "end": 17.20,
+            "day": 3
+
+        },
+        "ProdText": {
+            "link": "https://meet.google.com/lookup/eztoeotb6o",
+            "start": 15.30,
+            "end": 17.30,
+            "day": 4
+
+        },
+        "CieTerc": {
+            "link": "https://meet.google.com/lookup/b36ywocrdm?authuser=0&hs=179",
+            "start": 13.30,
+            "end": 17.35,
+            "day": 4
+
+        },
+        "SabPol": {
+            "link": "https://meet.google.com/lookup/grvjt5677j?authuser=0&hs",
+            "start": 13.30,
+            "end": 15.15,
+            "day": 4
+
+        },
+        "TeatPr": {
+            "link": "https://meet.google.com/lookup/gs4ktviwe6?authuser=0&hs=179",
+            "start": 13.30,
+            "end": 15.15,
+            "day": 3
+
+        },
+        "TeatCr": {
+            "link": "https://meet.google.com/lookup/dgcs6wgqoq?authuser=0&hs=179",
+            "start": 15.35,
+            "end": 17.20,
+            "day": 3
+
+        },
+        "Gam": {
+            "link": "https://meet.google.com/lookup/asqh6ch2c6?authuser=0&hs=179",
+            "start": 13.30,
+            "end": 15.15,
+            "day": 4
+
+        },
+        "Gam2": {
+            "link": "https://meet.google.com/lookup/ak7w5vydgz?authuser=0&hs=179",
+            "start": 15.35,
+            "end": 17.20,
+            "day": 4
+
+        },
+        "EmpSoc": {
+            "link": "https://meet.google.com/lookup/bnnrzb6m6u?authuser=0&hs=179",
+            "start": 13.30,
+            "end": 16.00,
+            "day": 4
+
+        },
+        "AJS": {
+            "link": "https://meet.google.com/lookup/he3zgnp5uw?authuser=0&hs=179",
+            "start": 14.00,
+            "end": 16.00,
+            "day": 5
+
+        },
+        "EspRenSoc": {
+            "link": "https://meet.google.com/lookup/e5vbpmcjl2?authuser=0&hs=179",
+            "start": 13.30,
+            "end": 15.15,
+            "day": 5
+
+        },
+        "Desp": {
+            "link": "https://meet.google.com/lookup/e5vbpmcjl2?authuser=0&hs=179",
+            "start": 15.35,
+            "end": 17.20,
+            "day": 5
+
+        }
+
     }
 
 }
