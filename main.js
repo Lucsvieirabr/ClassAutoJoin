@@ -36,6 +36,7 @@ async function GetLink() {
     let Time = Data.getHours() + (Data.getMinutes() / 100)
     if (Data.getDay === 0 || Data.getDay === 6) return ('É final de semana, vai dormir vagabundo !!');
     if (Time >= 9.05 && Time < 9.20) return ('Tá no recreio Vagabundo, vai fazer oque com o link ?!!');
+    if (Time < 7.25 || Time > 11.50) return GetItinerarioOrAlert(Time, Data.getDay())
     let SelectedClass = await document.getElementById('classselect').value;
     let SelectedEstranClass = await document.getElementById('LEselect').value;
     let AllClassJson = await fetch('./class.json')
@@ -56,16 +57,8 @@ async function GetLink() {
 
 
 async function openwindow(window) {
-    let link
-    let Data = new Date();
-    let Time = Data.getHours() + (Data.getMinutes() / 100)
 
-    if (Time < 7.25 || Time > 11.50) {
-        link = await GetItinerarioOrAlert(Time, Data.getDay())
-    } else {
-        link = await GetLink()
-
-    }
+    let link = await GetLink()
     if (!link.startsWith('h')) return alert(link)
     window.open(link);
 
@@ -105,10 +98,15 @@ async function GetItinerarioOrAlert(time, day) {
         .then(response => response.json())
     let ItinerariosJson = AllClassJson['itinerarios']
     let Array = JSON.parse(localStorage.itinerarios)
+    let link
     Array.forEach(function(ItineInscrito) {
 
         if (ItineInscrito == 'LabMusic' && day == 3 && time >= 13.30 && time < 17.35) return "https://meet.google.com/lookup/duki5vi7mn?authuser=0&hs=179"
-        if ((ItinerariosJson[ItineInscrito])['start'] <= time && time < (ItinerariosJson[ItineInscrito])['end']) return (ItinerariosJson[ItineInscrito])['link']
+        if ((ItinerariosJson[ItineInscrito])['start'] <= time && time < (ItinerariosJson[ItineInscrito])['end']) {
+            if ((ItinerariosJson[ItineInscrito])['day'] == day) {
+                return link = (ItinerariosJson[ItineInscrito])['link']
+            }
+        }
     })
-
+    return link
 }
