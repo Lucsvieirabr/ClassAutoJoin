@@ -108,5 +108,6 @@ async function GetItinerarioOrAlert(time, day) {
             }
         }
     })
+    if (link == undefined) return ('Ainda é muito cedo ou já acabou sua aula!')
     return link
 }
