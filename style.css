@@ -52,7 +52,7 @@ select {
     font-size: 0.9rem;
     border-radius: 1.5rem;
     height: 50px;
-    width: 24rem;
+    width: 22rem;
     text-align: center;
     text-align-last: center;
     text-indent: 1rem;
@@ -82,13 +82,42 @@ button {
     color: #1C3E93;
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 460px) {
     button {
-        font-size: 1r;
+        font-size: 1rem;
     }
     select {
         height: 50px;
-        width: 20rem;
+        width: 22rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    button {
+        font-size: 1rem;
+    }
+    select {
+        height: 40px;
+        width: 19rem;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    button {
+        font-size: 1rem;
+    }
+    select {
+        height: 40px;
+        width: 270px;
+    }
+    .menu {
+        padding: 20px;
+    }
+    #classselect {
+        margin-bottom: 15px;
+    }
+    #itinerarioLabel {
+        margin-top: 5px;
     }
 }
 
@@ -145,7 +174,7 @@ input[type="checkbox" i] {
 #itinerarioLabel {
     margin-top: 0.9rem;
     text-align: left;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 .SelectsDiv {
