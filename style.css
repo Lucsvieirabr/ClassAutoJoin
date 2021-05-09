@@ -77,27 +77,39 @@ button {
     border: none;
 }
 
-@media screen and (max-width: 418px) {
-    .menu {
-        padding: 5%;
-    }
-    label {
-        font-size: 1rem;
-    }
-}
-
-@media screen and (max-width: 344px) {
-    .menu {
-        padding: 0.5%;
-    }
-    label {
-        font-size: 0.5rem;
-    }
-}
-
 #credit {
     font-size: 1rem;
     color: #1C3E93;
+}
+
+@media screen and (max-width: 400px) {
+    button {
+        font-size: 1.4rem;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    span {
+        font-size: 1.3rem;
+    }
+    select {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    button {
+        font-size: 1.2rem;
+    }
+    h1 {
+        font-size: 1.6rem;
+    }
+    span {
+        font-size: 1.2rem;
+    }
+    select {
+        width: 320px;
+    }
 }
 
 a {
