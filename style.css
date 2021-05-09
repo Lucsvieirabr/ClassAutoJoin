@@ -82,7 +82,7 @@ button {
     color: #1C3E93;
 }
 
-@media screen and (min-width: 430px) {
+@media screen and (max-width: 430px) {
     button {
         font-size: 1r;
     }
@@ -92,7 +92,7 @@ button {
     }
 }
 
-@media screen and (min-height: 650px) {
+@media screen and (max-height: 650px) {
     menu {
         padding-top: 15px;
     }
