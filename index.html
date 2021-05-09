@@ -27,9 +27,10 @@
 <body>
 
     <section class="menu">
+        <img src="./sale.png">
         <h1>Entrar na Aula</h1>
-        <div>
-            <label>Salas Disponíveis</label>
+        <div class="SelectsDiv">
+            <span>Sala</span>
             <select id="classselect" onchange="StorageData('classselect', 'class')">
             
             <option value="a">2°A</option>
@@ -39,9 +40,9 @@
 
         </select>
         </div>
-        <div id="LEselectDiv">
-            <label>Língua estrangeira</label>
-            <select id="LEselect" onchange="StorageData('LEselect', 'estranclass')">
+        <div id="LEselectDiv" class="SelectsDiv">
+            <span>Língua estrangeira</span>
+            <select id="LEselect" class="Selects" onchange="StorageData('LEselect', 'estranclass')">
             
             <option value="esp">Espanhol</option>
             <option value="ing1">Inglês Regular</option>
@@ -52,121 +53,120 @@
         </select>
         </div>
         <div id="itinerarioLabel">
-            <label>Itinerários</label>
+            <span>Itinerários</span>
 
         </div>
 
-        <div class="border">
-            <div class="container">
-                <div class="option">
-                    <input id="PC" type="checkbox" onchange="StorageData('PC', 'itinerarios', true, 'PC')" />
-                    <label>Pensamento Computacional</label>
-                </div>
-                <div class="option">
-                    <input id="LEAS" type="checkbox" onchange="StorageData('LEAS', 'itinerarios', true, 'LEAS')" />
-                    <label>LEAS</label>
-                </div>
-                <div class="option">
-                    <input id="LabArtPr" type="checkbox" onchange="StorageData('LabArtPr', 'itinerarios', true, 'LabArtPr')" />
-                    <label>Laboratório de Artes (Projetos)</label>
-                </div>
-                <div class="option">
-                    <input id="LabArtCr" type="checkbox" onchange="StorageData('LabArtCr', 'itinerarios', true, 'LabArtCr')" />
-                    <label>Laboratório de Artes (Criação)</label>
-                </div>
-                <div class="option">
-                    <input id="LabMusic" type="checkbox" onchange="StorageData('LabMusic', 'itinerarios', true, 'LabMusic')" />
-                    <label>Laboratório de Música</label>
-                </div>
-                <div class="option">
-                    <input id="ConfSoc" type="checkbox" onchange="StorageData('ConfSoc', 'itinerarios', true, 'ConfSoc')" />
-                    <label>Conferências de Sociologia</label>
-                </div>
-                <div class="option">
-                    <input id="LabIng" type="checkbox" onchange="StorageData('LabIng', 'itinerarios', true, 'LabIng')" />
-                    <label>English Lab</label>
-                </div>
-                <div class="option">
-                    <input id="MatAv" type="checkbox" onchange="StorageData('MatAv', 'itinerarios', true, 'MatAv')" />
-                    <label>Matemática Avançada</label>
-                </div>
-                <div class="option">
-                    <input id="FCCSI" type="checkbox" onchange="StorageData('FCCSI', 'itinerarios', true, 'FCCSI')" />
-                    <label>FCCSI</label>
-                </div>
-                <div class="option">
-                    <input id="CenPesqSoc" type="checkbox" onchange="StorageData('CenPesqSoc', 'itinerarios', true, 'CenPesqSoc')" />
-                    <label>Centro de Pesquisa Social</label>
-                </div>
-                <div class="option">
-                    <input id="ComNewTec" type="checkbox" onchange="StorageData('ComNewTec', 'itinerarios', true, 'ComNewTec')" />
-                    <label>Comunicação e as Tecnologias</label>
-                </div>
-                <div class="option">
-                    <input id="ParqDB" type="checkbox" onchange="StorageData('ParqDB', 'itinerarios', true, 'ParqDB')" />
-                    <label>Parque Dom Bosco</label>
-                </div>
-                <div class="option">
-                    <input id="TutCie" type="checkbox" onchange="StorageData('TutCie', 'itinerarios', true, 'TutCie')" />
-                    <label>Tutoria de Ciências</label>
-                </div>
-                <div class="option">
-                    <input id="AnExCie" type="checkbox" onchange="StorageData('AnExCie', 'itinerarios', true, 'AnExCie')" />
-                    <label>Experimentação Científica</label>
-                </div>
-                <div class="option">
-                    <input id="Trips" type="checkbox" onchange="StorageData('Trips', 'itinerarios', true, 'Trips')" />
-                    <label>Trips Virtuais</label>
-                </div>
-                <div class="option">
-                    <input id="ProdText" type="checkbox" onchange="StorageData('ProdText', 'itinerarios', true, 'ProdText')" />
-                    <label>Produção Textual</label>
-                </div>
-                <div class="option">
-                    <input id="CieTerc" type="checkbox" onchange="StorageData('CieTerc', 'itinerarios', true, 'CieTerc')" />
-                    <label>Ciência da Terceira Idade</label>
-                </div>
-                <div class="option">
-                    <input id="SabPol" type="checkbox" onchange="StorageData('SabPol', 'itinerarios', true, 'SabPol')" />
-                    <label>Saber Política</label>
-                </div>
-                <div class="option">
-                    <input id="TeatPr" type="checkbox" onchange="StorageData('TeatPr', 'itinerarios', true, 'TeatPr')" />
-                    <label>Teatros Projetos</label>
-                </div>
-                <div class="option">
-                    <input id="TeatCr" type="checkbox" onchange="StorageData('TeatCr', 'itinerarios', true, 'TeatCr')" />
-                    <label>Teatros Criação</label>
-                </div>
-                <div class="option">
-                    <input id="Gam" type="checkbox" onchange="StorageData('Gam', 'itinerarios', true, 'Gam')" />
-                    <label>Gamificação</label>
-                </div>
-                <div class="option">
-                    <input id="Gam2" type="checkbox" onchange="StorageData('Gam2', 'itinerarios', true, 'Gam2')" />
-                    <label>Gamificação 2 Horário</label>
-                </div>
-                <div class="option">
-                    <input id="EmpSoc" type="checkbox" onchange="StorageData('EmpSoc', 'itinerarios', true, 'EmpSoc')" />
-                    <label>Empreendedorismo Social</label>
-                </div>
-                <div class="option">
-                    <input id="AJS" type="checkbox" onchange="StorageData('AJS', 'itinerarios', true, 'AJS')" />
-                    <label>AJS</label>
-                </div>
-                <div class="option">
-                    <input id="EspRenSoc" type="checkbox" onchange="StorageData('EspRenSoc', 'itinerarios', true, 'EspRenSoc')" />
-                    <label>Esporte de Rendimento e social</label>
-                </div>
-                <div class="option">
-                    <input id="Desp" type="checkbox" onchange="StorageData('Desp', 'itinerarios', true, 'Despf')" />
-                    <label>Desporto e Eventos</label>
-                </div>
+        <div class="container">
+            <div class="option">
+                <input id="PC" type="checkbox" onchange="StorageData('PC', 'itinerarios', true, 'PC')" />
+                <label>Pensamento Computacional</label>
+            </div>
+            <div class="option">
+                <input id="LEAS" type="checkbox" onchange="StorageData('LEAS', 'itinerarios', true, 'LEAS')" />
+                <label>LEAS</label>
+            </div>
+            <div class="option">
+                <input id="LabArtPr" type="checkbox" onchange="StorageData('LabArtPr', 'itinerarios', true, 'LabArtPr')" />
+                <label>Laboratório de Artes (Projetos)</label>
+            </div>
+            <div class="option">
+                <input id="LabArtCr" type="checkbox" onchange="StorageData('LabArtCr', 'itinerarios', true, 'LabArtCr')" />
+                <label>Laboratório de Artes (Criação)</label>
+            </div>
+            <div class="option">
+                <input id="LabMusic" type="checkbox" onchange="StorageData('LabMusic', 'itinerarios', true, 'LabMusic')" />
+                <label>Laboratório de Música</label>
+            </div>
+            <div class="option">
+                <input id="ConfSoc" type="checkbox" onchange="StorageData('ConfSoc', 'itinerarios', true, 'ConfSoc')" />
+                <label>Conferências de Sociologia</label>
+            </div>
+            <div class="option">
+                <input id="LabIng" type="checkbox" onchange="StorageData('LabIng', 'itinerarios', true, 'LabIng')" />
+                <label>English Lab</label>
+            </div>
+            <div class="option">
+                <input id="MatAv" type="checkbox" onchange="StorageData('MatAv', 'itinerarios', true, 'MatAv')" />
+                <label>Matemática Avançada</label>
+            </div>
+            <div class="option">
+                <input id="FCCSI" type="checkbox" onchange="StorageData('FCCSI', 'itinerarios', true, 'FCCSI')" />
+                <label>FCCSI</label>
+            </div>
+            <div class="option">
+                <input id="CenPesqSoc" type="checkbox" onchange="StorageData('CenPesqSoc', 'itinerarios', true, 'CenPesqSoc')" />
+                <label>Centro de Pesquisa Social</label>
+            </div>
+            <div class="option">
+                <input id="ComNewTec" type="checkbox" onchange="StorageData('ComNewTec', 'itinerarios', true, 'ComNewTec')" />
+                <label>Comunicação e as Tecnologias</label>
+            </div>
+            <div class="option">
+                <input id="ParqDB" type="checkbox" onchange="StorageData('ParqDB', 'itinerarios', true, 'ParqDB')" />
+                <label>Parque Dom Bosco</label>
+            </div>
+            <div class="option">
+                <input id="TutCie" type="checkbox" onchange="StorageData('TutCie', 'itinerarios', true, 'TutCie')" />
+                <label>Tutoria de Ciências</label>
+            </div>
+            <div class="option">
+                <input id="AnExCie" type="checkbox" onchange="StorageData('AnExCie', 'itinerarios', true, 'AnExCie')" />
+                <label>Experimentação Científica</label>
+            </div>
+            <div class="option">
+                <input id="Trips" type="checkbox" onchange="StorageData('Trips', 'itinerarios', true, 'Trips')" />
+                <label>Trips Virtuais</label>
+            </div>
+            <div class="option">
+                <input id="ProdText" type="checkbox" onchange="StorageData('ProdText', 'itinerarios', true, 'ProdText')" />
+                <label>Produção Textual</label>
+            </div>
+            <div class="option">
+                <input id="CieTerc" type="checkbox" onchange="StorageData('CieTerc', 'itinerarios', true, 'CieTerc')" />
+                <label>Ciência da Terceira Idade</label>
+            </div>
+            <div class="option">
+                <input id="SabPol" type="checkbox" onchange="StorageData('SabPol', 'itinerarios', true, 'SabPol')" />
+                <label>Saber Política</label>
+            </div>
+            <div class="option">
+                <input id="TeatPr" type="checkbox" onchange="StorageData('TeatPr', 'itinerarios', true, 'TeatPr')" />
+                <label>Teatros Projetos</label>
+            </div>
+            <div class="option">
+                <input id="TeatCr" type="checkbox" onchange="StorageData('TeatCr', 'itinerarios', true, 'TeatCr')" />
+                <label>Teatros Criação</label>
+            </div>
+            <div class="option">
+                <input id="Gam" type="checkbox" onchange="StorageData('Gam', 'itinerarios', true, 'Gam')" />
+                <label>Gamificação</label>
+            </div>
+            <div class="option">
+                <input id="Gam2" type="checkbox" onchange="StorageData('Gam2', 'itinerarios', true, 'Gam2')" />
+                <label>Gamificação 2 Horário</label>
+            </div>
+            <div class="option">
+                <input id="EmpSoc" type="checkbox" onchange="StorageData('EmpSoc', 'itinerarios', true, 'EmpSoc')" />
+                <label>Empreendedorismo Social</label>
+            </div>
+            <div class="option">
+                <input id="AJS" type="checkbox" onchange="StorageData('AJS', 'itinerarios', true, 'AJS')" />
+                <label>AJS</label>
+            </div>
+            <div class="option">
+                <input id="EspRenSoc" type="checkbox" onchange="StorageData('EspRenSoc', 'itinerarios', true, 'EspRenSoc')" />
+                <label>Esporte de Rendimento e social</label>
+            </div>
+            <div class="option">
+                <input id="Desp" type="checkbox" onchange="StorageData('Desp', 'itinerarios', true, 'Despf')" />
+                <label>Desporto e Eventos</label>
             </div>
         </div>
 
 
-        <button onclick="openwindow(window)">Join Class</button>
+
+        <button onclick="openwindow(window)">Entrar</button>
         <p id="credit">Feito por <a href="https://github.com/Lucsvieirabr">Lucas Vieira da Silva</a></p>
     </section>
 
