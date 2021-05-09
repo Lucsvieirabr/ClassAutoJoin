@@ -34,7 +34,7 @@ async function StorageData(Content, KeytoSave, CheckBox, CheckId) {
 async function GetLink() {
     let Data = new Date();
     let Time = Data.getHours() + (Data.getMinutes() / 100)
-    if (Data.getDay === 0 || Data.getDay === 6) return ('É final de semana, vai dormir vagabundo !!');
+    if (Data.getDay() == 0 || Data.getDay() == 6) return ('É final de semana, vai dormir vagabundo, só funciona em horário de aula !!');
     if (Time >= 9.05 && Time < 9.20) return ('Tá no recreio Vagabundo, vai fazer oque com o link ?!!');
     if (Time < 7.25 || Time > 11.50) return GetItinerarioOrAlert(Time, Data.getDay())
     let SelectedClass = await document.getElementById('classselect').value;
@@ -93,7 +93,7 @@ function CheckSelectedBox() {
 }
 
 async function GetItinerarioOrAlert(time, day) {
-    if (!localStorage.itinerarios || localStorage.itinerarios == '[]') return ('Ainda é muito cedo ou já acabou sua aula!')
+    if (!localStorage.itinerarios || localStorage.itinerarios == '[]') return ('Ainda é muito cedo ou já acabou sua aula, este site só funciona no horário de aula!')
     let AllClassJson = await fetch('./class.json')
         .then(response => response.json())
     let ItinerariosJson = AllClassJson['itinerarios']
