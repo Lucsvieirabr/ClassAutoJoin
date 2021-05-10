@@ -87,53 +87,6 @@ button:hover {
     color: #1C3E93;
 }
 
-@media screen and (max-width: 460px) {
-    button {
-        font-size: 1rem;
-    }
-    select {
-        height: 50px;
-        width: 22rem;
-    }
-}
-
-@media screen and (max-width: 420px) {
-    button {
-        font-size: 1rem;
-    }
-    select {
-        height: 40px;
-        width: 19rem;
-    }
-}
-
-@media screen and (max-width: 380px) {
-    button {
-        font-size: 1rem;
-        margin-top: 12px;
-        height: 3.5rem;
-    }
-    select {
-        height: 40px;
-        width: 270px;
-    }
-    .menu {
-        padding: 20px;
-    }
-    .ClasSelec {
-        margin-bottom: 10px;
-    }
-    #itinerarioLabel {
-        margin-top: 5px;
-    }
-}
-
-@media screen and (max-height: 650px) {
-    menu {
-        padding-top: 15px;
-    }
-}
-
 a {
     color: #EE3E42;
     margin-left: 0.2rem;
@@ -192,4 +145,51 @@ input[type="checkbox" i] {
 
 #classselect {
     margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 460px) {
+    button {
+        font-size: 1rem;
+    }
+    select {
+        height: 50px;
+        width: 22rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    button {
+        font-size: 1rem;
+    }
+    select {
+        height: 40px;
+        width: 19rem;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    button {
+        font-size: 1rem;
+        margin-top: 12px;
+        height: 3.5rem;
+    }
+    select {
+        height: 40px;
+        width: 270px;
+    }
+    .menu {
+        padding: 20px;
+    }
+    .ClasSelec {
+        margin-bottom: 10px !important;
+    }
+    #itinerarioLabel {
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-height: 650px) {
+    menu {
+        padding-top: 15px;
+    }
 }
