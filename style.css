@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,800&display=swap');
 html,
 body {
-    width: 100%;
-    height: 100%;
+    width: 100% !important;
+    height: 100% !important;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
@@ -30,7 +30,6 @@ body {
 html {
     background-image: linear-gradient(to bottom right, #306Bff, #1C3E93);
     background-size: cover;
-    background-position: center
 }
 
 label {
