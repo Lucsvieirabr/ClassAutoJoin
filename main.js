@@ -101,13 +101,13 @@ async function GetItinerarioOrAlert(time, day) {
     let link
     Array.forEach(function(ItineInscrito) {
 
-        if (ItineInscrito == 'LabMusic' && day == 3 && time >= 13.30 && time < 17.35) return "https://meet.google.com/lookup/duki5vi7mn?authuser=0&hs=179"
+        if (ItineInscrito == 'LabMusic' && day == 3 && time >= 13.30 && time < 17.35) return link = "https://meet.google.com/lookup/duki5vi7mn?authuser=0&hs=179"
         if ((ItinerariosJson[ItineInscrito])['start'] <= time && time < (ItinerariosJson[ItineInscrito])['end']) {
             if ((ItinerariosJson[ItineInscrito])['day'] == day) {
                 return link = (ItinerariosJson[ItineInscrito])['link']
             }
         }
     })
-    if (link == undefined) return ('Ainda é muito cedo ou já acabou sua aula!')
+    if (link == undefined) return ('Ainda é muito cedo ou já acabou sua aula, este site só funciona em horário de aula !')
     return link
 }
