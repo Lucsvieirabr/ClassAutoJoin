@@ -43,11 +43,11 @@
             "ing3": "https://meet.google.com/lookup/gf6p7caouy"
         },
         "cronograma": [
-            ["HistLink", "MatLink", "QuiLink", "PortLink", "FisLink"],
-            ["FiloLink", "MatLink", "GeoLink", "BioLink", "PortLink"],
-            ["BioLink", "LingEstranLink", "QuiLink", "FisLink", "MatLink"],
-            ["QuiLink", "FisLink", "GeoLink", "MatLink", "HistLink"],
-            ["PortLink", "PortLink", "LingEstranLink", "BioLink", "EreLink"]
+            ["QuiLink", "EreLink", "HistLink", "FisLink", "MatLink"],
+            ["FisLink", "BioLink", "PortLink", "GeoLink", "QuiLink"],
+            ["MatLink", "LingEstranLink", "QuiLink", "HistLink", "PortLink"],
+            ["PortLink", "PortLink", "MatLink", "BioLink", "FisLink"],
+            ["BioLink", "MatLink", "LingEstranLink", "FiloLink", "GeoLink"]
         ]
     },
     "b": {
@@ -67,11 +67,11 @@
             "ing3": "https://meet.google.com/lookup/gf6p7caouy"
         },
         "cronograma": [
-            ["FisLink", "QuiLink", "PortLink", "HistLink", "MatLink"],
-            ["BioLink", "FisLink", "MatLink", "EreLink", "QuiLink"],
-            ["GeoLink", "LingEstranLink", "HistLink", "PortLink", "PortLink"],
-            ["PortLink", "MatLink", "QuiLink", "BioLink", "FisLink"],
-            ["MatLink", "FiloLink", "LingEstranLink", "GeoLink", "BioLink"]
+            ["HistLink", "MatLink", "QuiLink", "PortLink", "BioLink"],
+            ["QuiLink", "GeoLink", "FiloLink", "FisLink", "MatLink"],
+            ["BioLink", "LingEstranLink", "HistLink", "MatLink", "EreLink"],
+            ["FisLink", "QuiLink", "GeoLink", "PortLink", "PortLink"],
+            ["PortLink", "BioLink", "LingEstranLink", "MatLink", "FisLink"]
         ]
     },
     "c": {
@@ -91,11 +91,11 @@
             "ing3": "https://meet.google.com/lookup/dlzqcp6kvm"
         },
         "cronograma": [
-            ["PortLink", "PortLink", "EreLink", "QuiLink", "BioLink"],
-            ["QuiLink", "FiloLink", "PortLink", "MatLink", "GeoLink"],
-            ["HistLink", "LingEstranLink", "MatLink", "BioLink", "FisLink"],
-            ["MatLink", "QuiLink", "FisLink", "HistLink", "PortLink"],
-            ["BioLink", "GeoLink", "LingEstranLink", "FisLink", "MatLink"]
+            ["PortLink", "PortLink", "BioLink", "HistLink", "QuiLink"],
+            ["BioLink", "FisLink", "QuiLink", "MatLink", "GeoLink"],
+            ["FisLink", "LingEstranLink", "MatLink", "PortLink", "BioLink"],
+            ["EreLink", "MatLink", "PortLink", "QuiLink", "HistLink"],
+            ["MatLink", "GeoLink", "LingEstranLink", "FisLink", "FiloLink"]
         ]
     },
     "itinerarios": {
