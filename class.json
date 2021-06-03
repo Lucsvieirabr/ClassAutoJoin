@@ -133,8 +133,8 @@
         "LabMusic": {
             "link": "https://meet.google.com/lookup/dzpy27z6ip?authuser=0&h",
             "start": 13.30,
-            "end": 17.35,
-            "day": 1
+            "end": 16.00,
+            "day": 3
 
         },
         "ConfSoc": {
@@ -146,9 +146,9 @@
         },
         "LabIng": {
             "link": "https://meet.google.com/lookup/gnie2bjjcn?authuser=0&hs=179",
-            "start": 15.00,
-            "end": 16.10,
-            "day": 1
+            "start": 15.30,
+            "end": 16.40,
+            "day": 3
 
         },
         "MatAv": {
@@ -202,9 +202,9 @@
         },
         "Trips": {
             "link": "https://meet.google.com/lookup/dsqjbtcadl?authuser=0&hs=179",
-            "start": 15.35,
-            "end": 17.20,
-            "day": 3
+            "start": 15.00,
+            "end": 16.35,
+            "day": 1
 
         },
         "ProdText": {
