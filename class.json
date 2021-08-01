@@ -43,11 +43,11 @@
             "ing3": "https://meet.google.com/lookup/gf6p7caouy"
         },
         "cronograma": [
-            ["QuiLink", "EreLink", "HistLink", "FisLink", "MatLink"],
-            ["FisLink", "BioLink", "PortLink", "GeoLink", "QuiLink"],
-            ["MatLink", "LingEstranLink", "QuiLink", "HistLink", "PortLink"],
-            ["PortLink", "PortLink", "MatLink", "BioLink", "FisLink"],
-            ["BioLink", "MatLink", "LingEstranLink", "FiloLink", "GeoLink"]
+            ["MatLink", "HistLink", "FisLink", "QuiLink", "PortLink"],
+            ["QuiLink", "FiloLink", "MatLink", "BioLink", "GeoLink"],
+            ["FisLink", "LingEstranLink", "MatLink", "EreLink", "HistLink"],
+            ["PortLink", "PortLink", "BioLink", "GeoLink", "QuiLink"],
+            ["PortLink", "BioLink", "LingEstranLink", "FisLink", "MatLink"]
         ]
     },
     "b": {
