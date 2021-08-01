@@ -158,6 +158,9 @@ input[type="checkbox" i] {
         height: 50px;
         width: 22rem;
     }
+    html {
+        background-image: none;
+    }
 }
 
 @media screen and (max-width: 420px) {
